@@ -40,7 +40,14 @@ class ViewController: UIViewController {
 		let randomNumber = Int(arc4random_uniform(UInt32(childList.count)))
 		var child:String = ""
 		child = childList.remove(at: randomNumber);	// remove the random child from the list so they can't be picked again until everyone has a turn
-		childLabel.text = child
+		// childLabel.text = child
+        UIView.transition(with: childLabel,
+                                  duration: 0.5,
+                                  options: [.transitionCrossDissolve],
+                                  animations: {
+                                    
+                                    self.childLabel.text = child
+        }, completion: nil)
 		childUsed.append(child);	// "save" the child in the used list
 	}
 }
