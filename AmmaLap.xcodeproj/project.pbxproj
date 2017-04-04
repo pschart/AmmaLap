@@ -15,6 +15,7 @@
 		F90B126C1E26EB2A00BAC2A3 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B126B1E26EB2A00BAC2A3 /* NotificationController.swift */; };
 		F90B126E1E26EB2A00BAC2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90B126D1E26EB2A00BAC2A3 /* Assets.xcassets */; };
 		F90B12721E26EB2A00BAC2A3 /* AmmaLapWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F90B12541E26EB2900BAC2A3 /* AmmaLapWatch.app */; };
+		F91D9A021E931B1B00C009BA /* ChildPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91D9A011E931B1B00C009BA /* ChildPick.swift */; };
 		F9C782B41E1D9FA100ADD6C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C782B31E1D9FA100ADD6C4 /* AppDelegate.swift */; };
 		F9C782B61E1D9FA100ADD6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C782B51E1D9FA100ADD6C4 /* ViewController.swift */; };
 		F9C782B91E1D9FA100ADD6C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C782B71E1D9FA100ADD6C4 /* Main.storyboard */; };
@@ -92,6 +93,7 @@
 		F90B126B1E26EB2A00BAC2A3 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		F90B126D1E26EB2A00BAC2A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F90B126F1E26EB2A00BAC2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F91D9A011E931B1B00C009BA /* ChildPick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildPick.swift; sourceTree = "<group>"; };
 		F9C782B01E1D9FA100ADD6C4 /* AmmaLap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmmaLap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C782B31E1D9FA100ADD6C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C782B51E1D9FA100ADD6C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				F9C782BA1E1D9FA100ADD6C4 /* Assets.xcassets */,
 				F9C782BC1E1D9FA100ADD6C4 /* LaunchScreen.storyboard */,
 				F9C782BF1E1D9FA100ADD6C4 /* Info.plist */,
+				F91D9A011E931B1B00C009BA /* ChildPick.swift */,
 			);
 			path = AmmaLap;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 			files = (
 				F9C782B61E1D9FA100ADD6C4 /* ViewController.swift in Sources */,
 				F9C782B41E1D9FA100ADD6C4 /* AppDelegate.swift in Sources */,
+				F91D9A021E931B1B00C009BA /* ChildPick.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

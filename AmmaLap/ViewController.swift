@@ -12,6 +12,7 @@ import Foundation
 class ViewController: UIViewController {
 	var childList:Array<String> = []	// will store the names of all children once view is loaded
 	var childUsed:Array<String> = []	// stores the names of children who have been picked
+    var childPickList:Array<ChildPick> = [] // tracks history of which child was picked (and when) for each time the button was pressed.  currently not persisted between execution of the app
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -48,7 +49,8 @@ class ViewController: UIViewController {
                                     
                                     self.childLabel.text = child
         }, completion: nil)
-		childUsed.append(child);	// "save" the child in the used list
+        childPickList.append(ChildPick(name : child, dateTime: Date()))
+		childUsed.append(child)	// "save" the child in the used list
 	}
 }
 
