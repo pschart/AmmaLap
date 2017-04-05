@@ -12,6 +12,7 @@ import Foundation
 class ViewController: UIViewController {
 	var childList:Array<String> = []	// will store the names of all children once view is loaded
 	var childUsed:Array<String> = []	// stores the names of children who have been picked
+    var childPickList:Array<ChildPick> = [] // tracks history of which child was picked (and when) for each time the button was pressed.  currently not persisted between execution of the app
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -40,8 +41,16 @@ class ViewController: UIViewController {
 		let randomNumber = Int(arc4random_uniform(UInt32(childList.count)))
 		var child:String = ""
 		child = childList.remove(at: randomNumber);	// remove the random child from the list so they can't be picked again until everyone has a turn
-		childLabel.text = child
-		childUsed.append(child);	// "save" the child in the used list
+		// childLabel.text = child
+        UIView.transition(with: childLabel,
+                                  duration: 0.5,
+                                  options: [.transitionCrossDissolve],
+                                  animations: {
+                                    
+                                    self.childLabel.text = child
+        }, completion: nil)
+        childPickList.append(ChildPick(name : child, dateTime: Date()))
+		childUsed.append(child)	// "save" the child in the used list
 	}
 }
 

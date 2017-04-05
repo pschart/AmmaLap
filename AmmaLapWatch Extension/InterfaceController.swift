@@ -26,6 +26,8 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        // clear out the most recently selected child so that when it activates it's not showing the last result while app is still loading
+        childLabel.setText("child")
     }
 
     @IBOutlet var childLabel: WKInterfaceLabel!
